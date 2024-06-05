@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Contador</title>
+</head>
+<body>
+    <h1>Counter: <span id="counter">0</span></h1>
+    <button id="incrementBtn">Increment</button>
+
+    <script>
+        
+        const apiBaseUrl = 'http://localhost:5211/api/counter';
+
+        async function getCounter() {
+            try {
+                const response = await fetch(apiBaseUrl);
+                const counter = await response.json();
+                document.getElementById('counter').innerText = counter;
+            } catch (error) {
+                console.error('Erro ao buscar contador:', error);
+            }
+        }
+
+        async function incrementCounter() {
+            try {
+                const response = await fetch(apiBaseUrl, {
+                    method: 'POST'
+                });
+                const counter = await response.json();
+                document.getElementById('counter').innerText = counter;
+            } catch (error) {
+                console.error('Erro ao incrementar o contador:', error);
+            }
+        }
+
+        document.getElementById('incrementBtn').addEventListener('click', incrementCounter);
+
+        getCounter();
+    </script>
+</body>
+</html>

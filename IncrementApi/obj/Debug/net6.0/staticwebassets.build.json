@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "t1bEdQXLdGPEZhu5Iwhaiz+mwXehGngxA635aCwHgVA=",
+  "Source": "IncrementApi",
+  "BasePath": "_content/IncrementApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "IncrementApi/wwwroot",
+      "Source": "IncrementApi",
+      "ContentRoot": "/home/francisco/Estudos/dotNet/IncrementApi/wwwroot/",
+      "BasePath": "_content/IncrementApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/francisco/Estudos/dotNet/IncrementApi/wwwroot/index.html",
+      "SourceId": "IncrementApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/francisco/Estudos/dotNet/IncrementApi/wwwroot/",
+      "BasePath": "_content/IncrementApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}
